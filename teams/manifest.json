@@ -1,0 +1,49 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "1.0.0",
+    "id": "536415a0-ae01-4452-a9cc-021dfa5e4702",
+    "packageName": "demo.polymorphiccra",
+    "developer": {
+        "name": "Contoso",
+        "websiteUrl": "https://contoso.z21.web.core.windows.net",
+        "privacyUrl": "https://contoso.z21.web.core.windows.net",
+        "termsOfUseUrl": "https://contoso.z21.web.core.windows.net"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Polymorphic CRA",
+        "full": ""
+    },
+    "description": {
+        "short": "Polymorphic CRA",
+        "full": "Polymorphic CRA Teams app"
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "polymorphic-cra",
+            "name": "Polymorphic CRA",
+            "contentUrl": "https://contoso.z21.web.core.windows.net",
+            "websiteUrl": "https://contoso.z21.web.core.windows.net",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "contoso.z21.web.core.windows.net",
+        "localhost"
+    ],
+    "webApplicationInfo": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "resource": "api://contoso.z21.web.core.windows.net/00000000-0000-0000-0000-000000000000"
+    }
+}

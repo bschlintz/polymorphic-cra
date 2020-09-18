@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "polymorphic-cra-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/polymorphicCra/PolymorphicCraWebPart.js",
+          "manifest": "./src/webparts/polymorphicCra/PolymorphicCraWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PolymorphicCraWebPartStrings": "lib/webparts/polymorphicCra/loc/{locale}.js"
+  }
+}
