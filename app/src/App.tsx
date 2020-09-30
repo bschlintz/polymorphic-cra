@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import * as msTeams from '@microsoft/teams-js';
-import { TeamsHome } from './components/TeamsHome';
+import { TeamsSSOHome } from './components/TeamsSSOHome';
+import { TeamsMSALHome } from './components/TeamsMSALHome';
 import { SharePointHome } from './components/SharePointHome';
 import { WebAppHome } from './components/WebAppHome';
 
@@ -18,7 +19,8 @@ function App() {
 
   const renderHomeScreen = () => {
     if (!isInitialized) return null;
-    else if (teamsContext) return <TeamsHome teamsContext={teamsContext} />
+    else if (teamsContext) return <TeamsSSOHome teamsContext={teamsContext} />
+    // else if (teamsContext) return <TeamsMSALHome teamsContext={teamsContext} />
     else if (spContext) return <SharePointHome spContext={spContext} />
     else return <WebAppHome />
   }
